@@ -1,0 +1,17 @@
+// Browser console
+// In statement context (console), {} at the beginning of the line is recognized as a block, 
+// so {} + [] becomes +[] (unary plus), and {} + {} becomes +{}.
+[] + [] // ''
+{} + [] // 0
+[] + {} // '[object Object]'
+{} + {} // NaN
+[] - {} // NaN
+
+// When assigning (expression context)
+// In an expression context (assignment, parentheses, function arguments), 
+// {} is unambiguously interpreted as an object literal, and ordinary string concatenation is performed.
+[] + [] // ''
+{} + [] // '[object Object]'
+[] + {} // '[object Object]'
+{} + {} // '[object Object][object Object]'
+[] - {} // NaN
