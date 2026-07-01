@@ -1,0 +1,23 @@
+const str1 = '🌐';
+const str2 = "🌐";
+const str3 = `🌐`;
+const str4 = '\u{1F310}';
+const str5 = "\u{1F310}";
+const str6 = `\u{1F310}`;
+const str7 = "\uD83C\uDF10";
+const str8 = '\uD83C\uDF10';
+const str9 = `\uD83C\uDF10`;
+const str10 = "\uD83C" + "\uDF10";
+const str11 = '\uD83C' + '\uDF10';
+
+console.log(str1);
+console.log(str2);
+console.log(str3);
+console.log(str4);
+console.log(str5);
+console.log(str6);
+console.log(str7);
+console.log(str8);
+console.log(str9);
+console.log(str10);
+console.log(str11);
