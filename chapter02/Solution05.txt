@@ -1,0 +1,7 @@
+The expression a || b returns the first truthy value between a and b. That is, if a is truthy, it returns a; otherwise, it returns b.
+The expression a ? a : b also returns a if it is truthy, and b otherwise.
+Therefore, the values of these expressions are the same. However, in a || b, a is evaluated once, whereas in a ? a : b it is evaluated twice.
+Hence, if evaluating a has a side effect, the two expressions are not strictly equivalent.
+
+The expression a && b returns the first falsy value between a and b. If a is falsy, it returns a; otherwise, it returns b.
+The expression a && b can be replaced by the equivalent a ? b : a. The remark about side effects applies in this case as well.
