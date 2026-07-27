@@ -11,7 +11,7 @@ switch (n) {
     case 2: arr[k + 1] = 0;
     case 1: arr[k] = 0;
     case 0: break;
-    default: console.log('Некорректное значение n (должно быть 0 - 7)');
+    default: console.log('Invalid n value (must be 0–7)');
 }
 
 console.log(arr); // [1, 2, 0, 0, 0, 6, 7, 8, 9, 10]
